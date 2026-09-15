@@ -73,7 +73,6 @@ The current training script fits an `XGBRegressor` with 200 estimators, a learni
 | RMSE | `504.57` MW |
 | R² | `0.9875` |
 
-Also add a naive baseline, such as "same hour yesterday," so readers can judge whether the model improves on a simple forecasting rule.
 
 ## Local setup
 
