@@ -1,0 +1,53 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+config.local.py
+
+# Runtime databases and logs
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+selected_model.json
+
+# Generated model artifacts
+*.pkl
+*.joblib
+
+# Downloaded or generated data
+energy_dataset.csv
+weather_features.csv
+data/raw/
+data/processed/
+
+# Build, coverage, and notebook output
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
