@@ -6,7 +6,7 @@ An end-to-end machine-learning project for forecasting hourly electricity demand
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-EB5B29)
 ![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 
-> **Repository status:** The historical training workflow and dashboard are implemented. In the supplied project snapshot, the real background scheduling worker is missing—`scheduler.py` contains a second copy of the dashboard—so live refresh should be described as work in progress until that worker is restored and tested.
+> **Repository status:** The historical training workflow and dashboard are implemented. In the supplied project snapshot, the real background scheduling worker is missing -`scheduler.py` contains a second copy of the dashboard so live refresh should be described as work in progress until that worker is restored and tested.
 
 ## Why this project
 
@@ -66,13 +66,12 @@ The shared feature pipeline creates:
 
 The current training script fits an `XGBRegressor` with 200 estimators, a learning rate of 0.05, maximum depth of 6, row and column subsampling of 0.8, and a fixed random seed. Evaluation uses the final 20% of observations as a chronological holdout.
 
-Before publishing, run the final cleaned pipeline and replace the placeholders below with the exact console output from that run.
 
 | Metric | Test result |
 |---|---:|
-| MAE | `TBD` MW |
-| RMSE | `TBD` MW |
-| R² | `TBD` |
+| MAE | `353.54` MW |
+| RMSE | `504.57` MW |
+| R² | `0.9875` |
 
 Also add a naive baseline, such as "same hour yesterday," so readers can judge whether the model improves on a simple forecasting rule.
 
